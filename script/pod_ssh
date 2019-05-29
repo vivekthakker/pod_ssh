@@ -1,0 +1,4 @@
+#!/bin/bash
+
+POD_NAME="$1"
+kubectl exec "$POD_NAME" --stdin --tty -c "$POD_NAME" /bin/sh
